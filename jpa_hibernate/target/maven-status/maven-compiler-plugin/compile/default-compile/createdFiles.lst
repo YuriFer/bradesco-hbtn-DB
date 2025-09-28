@@ -1,1 +1,5 @@
-com\techcamps\cadastros\Main.class
+models\PessoaModel.class
+entities\Produto.class
+AdministrativoApp.class
+entities\Pessoa.class
+models\ProdutoModel.class
