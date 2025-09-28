@@ -1,0 +1,2 @@
+CREATE TABLE pessoa (id bigint not null, cpf varchar(11) not null, data_nascimento date not null, email varchar(100) not null, idade integer not null, nome varchar(100) not null, primary key (id))
+CREATE TABLE produto (id  integer, nome varchar(100) not null, preco double precision not null, quantidade integer not null, status boolean not null, primary key (id))
