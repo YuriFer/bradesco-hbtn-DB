@@ -1,0 +1,7 @@
+CREATE TABLE aluno (id  integer, email varchar(255) not null, matricula varchar(255) not null, nascimento date, nome_completo varchar(255) not null, primary key (id), unique (matricula))
+CREATE TABLE curso (id  integer, nome varchar(255) not null, sigla varchar(255) not null, professor_id bigint, primary key (id))
+CREATE TABLE curso_aluno (curso_id bigint not null, aluno_id bigint not null)
+CREATE TABLE endereco (id  integer, bairro varchar(255) not null, cep integer not null, cidade varchar(255) not null, endereco varchar(255) not null, estado varchar(255) not null, logradouro varchar(255) not null, numero varchar(255) not null, aluno_id bigint, primary key (id))
+CREATE TABLE material_curso (id  integer, url varchar(255) not null, curso_id bigint, primary key (id))
+CREATE TABLE professor (id  integer, email varchar(255) not null, matricula varchar(255) not null, nome_completo varchar(255) not null, primary key (id), unique (matricula))
+CREATE TABLE telefone (id  integer, ddd varchar(255) not null, numero varchar(255) not null, aluno_id bigint, professor_id bigint, primary key (id))
