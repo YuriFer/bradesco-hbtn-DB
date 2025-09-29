@@ -1,0 +1,9 @@
+entities\Aluno.class
+models\CursoModel.class
+entities\Endereco.class
+models\AlunoModel.class
+demo\GestaoCursosMain.class
+entities\Telefone.class
+entities\MaterialCurso.class
+entities\Professor.class
+entities\Curso.class
