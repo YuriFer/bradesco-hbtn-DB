@@ -18,7 +18,7 @@ public class UsuarioOperations {
 
     public void deleteUsuarioByName(String nome) {
         mongoDBConnection.getDatabase().getCollection("users")
-                .findOneAndDelete(new Document("nome", nome));
+                .deleteOne(new Document("nome", nome));
     }
 
     public List<Document> getAllUsuarios() {
